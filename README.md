@@ -11,7 +11,7 @@ _Untuk perintah yang dibungkus < > maka perintah tersebut diganti sesuai instruk
   ```
 - Pindah ke repositori hasil clone dengan perintah berikut
   ```
-  cd LAB-WEB-10-2024
+  cd LAB-WEB-14-2024
   ```
 - Buat branch baru berdasarkan NIM kalian serta gunakan branch tersebut untuk menyimpan kode dari soal yang dikerjakan
   ```
