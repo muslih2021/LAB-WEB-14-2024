@@ -42,3 +42,4 @@ Untuk menjalin silaturahmi, silahkan follow medsos asisten :+1:
 
 - [Instagram](https://www.instagram.com/moh_sahmat/)
 - [GitHub](https://github.com/muslih2021)
+- [linkedin](https://id.linkedin.com/in/moh-muslih-sahmat-4a1353250)
