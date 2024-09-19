@@ -1,0 +1,211 @@
+*,html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.navbar{
+    background-color: rgb(86, 214, 246);
+    width: 100;
+    padding: 1rem;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 8px 0;
+    color: rgb(252, 252, 252);
+    
+}
+
+.navbar ul li a:hover{
+    color: aqua;
+    border-bottom: 1px solid aqua;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    padding: 5rem;
+}
+
+.col1{
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.col2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.col2 img{
+    width: 200px;
+    height: 300px;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+
+.about{
+    margin-top: 2rem;
+    
+    
+}
+
+.about h2{
+    font-size: 1.8rem;
+    margin-bottom: 1rem ;
+}
+
+.about-content{
+    display: flex;
+    gap: 2rem;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+.about-content p{
+    flex: 1;
+}
+.gallery{
+    padding: 10px 100px 100px 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.gallerygrid{
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 1s ease;
+}
+
+.gallerygrid img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+}
+
+.gallerygrid:hover img{
+    transform: scale(1.05);
+}
+
+.teks {
+    padding-left: 170px;
+}
+
+footer {
+    background-color: rgb(86, 214, 246);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    margin-top: -50px;
+    flex-wrap: wrap;
+
+
+}
+
+.Contact h3 {
+    display: flex;
+    align-items: center;
+}
+
+.Contact {
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+    margin-right: 40px;
+    justify-content: space-between;
+    /* background-color: rgb(86, 214, 246); */
+    color: rgb(255, 255, 255);
+    flex: 1;
+}
+.contactinfo{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+
+.contactinfo a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    justify-content: space-between;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.contactinfo a:hover {
+    color: rgb(148, 224, 15);
+    border-bottom: 1px solid rgb(148, 224, 15);
+}
+
+@media (max-width: 480px) {
+    footer {
+        justify-content: center;
+    }
+    
+    .Contact h3 {
+        display: flex;
+        align-items: center;
+    }
+    .contactinfo{
+        justify-content: center;
+    }
+
+    .gallery {
+        padding: 100px 0px 100px 0px;
+    }
+}
