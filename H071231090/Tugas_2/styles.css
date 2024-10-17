@@ -1,0 +1,222 @@
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: poppins, sans-serif;
+    background-color: rgb(113, 2, 2);
+  }
+  
+  .navbar {
+    top: 0;
+    position: fixed;
+    font-weight: 600;
+    height: 3rem;
+    background-color:#000000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    margin: -10;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    transition: 0.5s background-color;
+  }
+  
+  .navbar a:hover {
+    background-color: rgb(111, 104, 104);
+  }
+  
+  .hero-section {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 5rem;
+    flex-direction: row-reverse;
+    height: 85vh;
+  }
+  
+  .hero-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+  }
+  
+  .hero-caption {
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  .hero-caption p {
+    line-height: 2;
+  }
+  
+  .about-section {
+    color: white;
+    font-size: 1.1rem;
+    padding: 2rem;
+    background-color: #635e5e;
+  }
+  
+  .container-about {
+    display: flex;
+    gap: 2.5rem;
+    text-align: justify;
+  }
+  
+.list{
+  padding-top: 20px;
+  color: white;
+}
+
+  .list .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Mengatur 3 kolom */
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+  .list .card {
+    text-align: center;
+    padding: 1rem;
+  }
+  /* agar gambar pop up */
+  .list .image {
+    padding: 1rem 0;
+    transition: transform 0.5s ease;
+  }
+  
+  .list .image:hover {
+    transform: scale(1.1);
+  }
+    
+  .list {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  .list img {
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between; /* ruang di antara elemen */
+    align-items: center; /* elemen sejajar secara vertikal */
+    padding: 2rem; /* ruang di dalam footer */
+    background-color: #858484 ;
+  }
+  
+  .footer-logo img {
+    max-height: 100px; /* Mengatur tinggi maksimum logo */
+  }
+  
+  .footer-contact p {
+    color: rgb(255, 255, 255); /* Warna teks */
+  }
+  
+  .footer .footer-contact {
+    display: flex;
+    gap: 5rem;
+  }
+  
+  /* untuk ukuran 768px */
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+      padding: 2rem;
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .hero-caption {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      max-width: 90%;
+    }
+  
+    .about-section {
+      font-size: 0.8rem;
+    }
+  
+    .hero-image img {
+      max-width: 80%;
+      height: auto;
+    }
+
+      .list .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Mengatur 3 kolom */
+        gap: 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .footer {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-section {
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+      padding: 2rem;
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .hero-caption {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      max-width: 90%;
+    }
+  
+    .about-section {
+      font-size: 0.8rem;
+    }
+
+    .container-about {
+      flex-wrap: wrap;
+    }
+  
+    .hero-image img {
+      max-width: 80%;
+      height: auto;
+    }
+
+      .list .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Mengatur 3 kolom */
+        gap: 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .footer {
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Sunscreen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Beauty Hack</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#types">Tipe Sunscreen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-white text-center d-flex align-items-center justify-content-center" style="background-image: url('assets/ss-1.png'); background-size: cover; background-position: center; height: 80vh;">
+        <div class="container">
+            <h1 class="display-4">Temukan Kebutuhan Sunscreenmu!</h1>
+            <p class="lead">Yuk cari tahu jenis-jenis sunscreen biar kamu gak salah pilih.</p>
+            <a href="#types" class="btn btn-outline-light btn-lg mt-3">Cari tahu sekarang</a>
+        </div>
+    </section>
+
+    <!-- tentang section -->
+    <section id="about" class="container my-5">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row my-2">
+                    <div class="col-12 col-md-6">
+                        <p>Sunscreen merupakan produk kecantikan yang bisa melindungi kulit dari bahaya sinar matahari. Jenis-jenis sunscreen di pasaran sendiri ada banyak, fungsinya juga berbeda-beda.</p>
+                        <p>Walaupun pada dasarnya fungsi utama dari produk sunscreen adalah menjaga kulit dari bahaya sinar ultraviolet yang ada pada sinar matahari. Dengan memakai sunscreen yang tepat maka akan membuat kulit tetap terlihat cantik.</p>
+                    </div>
+                    <div class="col-12 col-md-6 text-end">
+                        <img src="assets/pict.jpeg" alt="Sunscreen" width="150">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Tipe Sunscreen Section -->
+    <section id="types" class="container my-5">
+        <h2 class="text-center mb-4">3 Tipe Sunscreen</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="assets/phys.jpeg" height="200" class="card-img-top" alt="Physical Sunscreen">
+                    <div class="card-body">
+                        <h5 class="card-title">Physical Sunscreen</h5>
+                        <p class="card-text">Mungkin masih banyak yang belum tahu mengenai karakteristik, kelebihan dan kekurangan jenis sunscreen physical. Cara mudah mengenalinya adalah dari komposisi bahan dasarnya, yaitu dari mineral aktif, umumnya yakni zinc oxide dan titanium dioksida.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#physicalModal">
+                            Kelebihan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="assets/chec.jpeg" height="200" class="card-img-top" alt="Chemical Sunscreen">
+                    <div class="card-body">
+                        <h5 class="card-title">Chemical Sunscreen</h5>
+                        <p class="card-text">Jenis sunscreen kedua adalah chemical sunscreen, yang umumnya terbuat dari bahan dioxybenzone, avobenzone, oxybenzone, octocrylene, homosalate, dan octinoxate. Sunscreen ini bekerja di bawah permukaan kulit dengan menyerap sinar UV yang merusak. </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chemicalModal">
+                            Kelebihan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="assets/hyb.jpeg" class="card-img-top" alt="Hybrid Sunscreen">
+                    <div class="card-body">
+                        <h5 class="card-title">Hybrid Sunscreen</h5>
+                        <p class="card-text">Jenis ketiga adalah jenis hybrid, perpaduan nilai plus dari chemical serta physical sunscreen, dengan tujuan untuk memberikan manfaat lebih kepada Lo sebagai penggunanya. Cara kerjanya adalah dengan menggabungkan kedua jenis sunscreen, yaitu menyerap sinar UV sekaligus membuat perisai di kulit.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hybridModal">
+                            Kelebihan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Kelebihan -->
+    <!-- Physical Sunscreen Modal -->
+    <div class="modal fade" id="physicalModal" tabindex="-1" aria-labelledby="physicalModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="physicalModalLabel">Physical Sunscreen</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Komposisi bahan mineral di dalamnya langsung bekerja dengan menjadi perisai yang bisa memblokade sinar ultraviolet yang mencoba menembus lapisan kulit.</p>
+                    <p>Apa kelebihan jenis sunscreen physical? Ada banyak kelebihannya, yaitu:</p>
+                    <ul>
+                        <li>Mampu bekerja cepat menyediakan proteksi dari dampak negatif sinar ultraviolet setelah Lo mengoleskannya.</li>
+                        <li>Physical sunscreen cocok untuk segala jenis kulit, apalagi buat Lo yang punya jenis kulit berminyak atau kering.  Pertimbangannya sih, karena mineral yang terkandung di dalamnya mampu secara cepat memantulkan sinar ultraviolet dan menjaga kelembapan kulit tetap terjaga.</li>
+                        <li>Buat pemilik kulit berminyak, sunscreen jenis ini berguna untuk menghindarkan timbulnya alergi atau iritasi. Jadi, ini adalah sunscreen untuk kulit berjerawat dan sensitif yang recommended.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chemical Sunscreen Modal -->
+    <div class="modal fade" id="chemicalModal" tabindex="-1" aria-labelledby="chemicalModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="chemicalModalLabel">Chemical Sunscreen</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Sederhananya kayak gini, proteksi berlangsung dengan cara menggunakan bahan aktifnya untuk mengubah sinar ultraviolet menjadi panas.</p>
+                    <p>Apa saja kelebihan sunscreen jenis ini?</p>
+                    <ul>
+                        <li>Sunscreen ini umumnya mirip pelembap, dengan tekstur yang ringan dan mudah dioleskan ke kulit, terutama pada wajah berminyak. </li>
+                        <li>Tidak meninggalkan white cast atau bekas putih keabuan di kulit. Lapisannya terlihat transparan sehingga tidak berminyak. Jadi nggak perlu khawatir muka Lo terlihat berminyak.</li>
+                        <li>Cocok untuk pemilik kulit normal karena kondisi atau jenis kulit ini menyesuaikan diri pada komposisi bahan di dalamnya.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hybrid Sunscreen Modal -->
+    <div class="modal fade" id="hybridModal" tabindex="-1" aria-labelledby="hybridModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="hybridModalLabel">Hybrid Sunscreen</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Kelebihan jenis sunscreen ini antara lain:</p>
+                    <ul>
+                        <li>Filter UV serta mineral aktif di dalamnya akan memberikan perlindungan maksimal di kulit.</li>
+                        <li>Hybrid sunscreen cocok untuk semua kondisi atau jenis kulit, termasuk kalau kulit Lo berjerawat atau sensitif.</li>
+                        <li>Teksturnya light, mudah diaplikasikan dan meresap ke kulit tanpa menimbulkan whitecast,  yaitu lapisan putih yang nampak di permukaan kulit akibat penggunaan sunscreen. Lapisan ini terjadi karena bahan sunscreen tidak menyatu dengan kulit.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">FAQ</h2>
+            <div class="accordion" id="accordionFAQ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <p>Bagaimana cara mengetahui sunscreen cocok atau tidak?</p>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Terasa ringan di wajah dan tidak membuat kulit menjadi berminyak atau kering.</li>
+                                <li>Meresap dengan baik di kulit.</li>
+                                <li>Tidak muncul beruntusan atau jerawat.</li>
+                                <li>Tidak menimbulkan rasa gatal, kemerahan, atau iritasi setelah digunakan.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <p>Berapa kali pemakaian sunscreen dalam satu hari?</p>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            <p>Cara pakai sunscreen yang tak kalah penting yaitu mengaplikasikan sunscreen kembali setiap 2 jam sekali, terutama jika sedang berenang atau beraktivitas di luar ruangan. Sebab, perlindungan sunscreen dapat luntur karena produksi minyak alami dan keringat yang dipicu oleh aktivitas di luar ruangan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- form selection -->
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 "> <!-- Menyesuaikan ukuran form dengan grid Bootstrap -->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Alamat Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"> <!-- Mengatur ukuran textarea -->
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Pertanyaan</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-success">Kirim</button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Footer -->
+     <br>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Sunscreen Guide. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
