@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'creepy';
+    src: url('Font/Deadfall-Regular.ttf') format('truetype'); 
+    font-weight: 400;
+}
+
+body {
+    background-color:#0000005f;
+    background-image: url('cards/dark.png');
+    background-size: cover;
+    color: aliceblue;
+
+}
+
+.bg{
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #0000005f;
+    background-repeat: no-repeat;
+    /* margin: 0; */
+    /* opacity: 7; */
+    height: 100vh;
+    scrollbar-width: none;
+}
+
+.overlay h1 {
+    display: flex;
+    font-family: 'creepy';
+    font-size: 90px;
+    color: white;
+    justify-content: center;
+
+}
+
+.bet-image,
+.reduce-bet-image {
+    width: 80px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.bet-image:hover,
+.reduce-bet-image:hover {
+    transform: scale(1.1);
+}
+
+.usernya {
+    display: flex;
+    justify-content:space-around;
+}
+
+#controls button {
+    border: none;
+    background-color: aqua;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+
+}
