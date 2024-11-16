@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body { 
+    background-image: url(img/download.jpeg);
+    /* background: linear-gradient(to bottom, #d1e4ff, #f2f2f2); Warna latar belakang dengan gradien */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Overlay warna hitam semi-transparan */
+    z-index: 1;
+}
+
+.wrapper, .form-container {
+    position: relative;
+    z-index: 2; /* Supaya berada di atas overlay */
+}
+
+
+.form-container {
+    border: 2px solid #7a6149;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(25px);
+    padding: 30px; /* Kurangi padding form */
+    max-width: 500px; /* Lebar maksimum form yang lebih kecil */
+    margin: auto; /* Memastikan form berada di tengah halaman */
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: normal;
+    color: #ffffff; /* Warna judul */
+    margin-bottom: 20px;
+}
+
+.text-center{
+    font-weight: normal;
+    color: #ffffff; /* Warna judul */
+    margin-bottom: 20px;
+}
+
+
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 250px;
+    padding: 7px; /* Padding yang cukup pada input */
+    margin-bottom: 15px;
+    border: 3px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #8f0000; /* Warna tombol */
+    color: #fff;
+    padding: 12px 20px; /* Padding tombol */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: transparent; /* Warna tombol saat hover */
+    border: 2px solid #fff;
+}
+
+.form-group{
+    color: white;
+    
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: #fff12f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%; /* Tabel akan mengambil seluruh lebar */
+    border-collapse: collapse; /* Menggabungkan border */
+    margin-top: 10px; /* Tambahkan margin atas untuk jarak dari elemen lainnya */
+}
+
+table, th, td {
+    border: 1px solid #ccc; /* Warna dan jenis border */
+}
+
+th{
+    background-color: #5b3916;
+    font-weight: 600;
+}
+th, td {
+    padding: 15px; /* Tambahkan padding yang lebih besar untuk sel tabel */
+    text-align: left;
+    color: white;
+}
+
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membagi menjadi dua kolom */
+    gap: 15px; /* Jarak antara kolom */
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.full-width {
+    grid-column: span 2; /* Membuat tombol lebar penuh */
+    text-align: center;
+}
